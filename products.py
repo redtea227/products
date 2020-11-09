@@ -1,7 +1,8 @@
-import os
+import os # operating system
 
+# 讀取檔案
 products = []
-if os.path.isfile('products.csv'):
+if os.path.isfile('products.csv'): # 檢查檔案在不在
 	print('yeah! 找到檔案了!')
 	with open ('products.csv', 'r', encoding='utf-8') as f:
 		for line in f:
@@ -14,10 +15,6 @@ if os.path.isfile('products.csv'):
 
 else:
 	print('找不到檔案.....')
-
-
-
-# 讀取檔案
 
 
 # 讓使用者輸入
